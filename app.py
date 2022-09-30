@@ -16,6 +16,8 @@ def index():
 
 @app.route("/imagen")
 def imagen(id):
+    args = request.args
+    id=args.get('id')
     output=[]
     if id=="1":
         output.append({"id":"1",'nombre':'Jean','descripcion':'Pantalon de Jean deportivo','stock':'1','precio':'500','foto':'https://urbanluxury.b-cdn.net/wp-content/uploads/2022/09/URBAN_LUXURY-1031-683x1024.jpg','categoria':'mujer'})
