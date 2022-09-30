@@ -15,7 +15,7 @@ def index():
     return make_response(jsonify(data), 200)
 
 @app.route("/imagen")
-def imagen(id):
+def imagen():
     args = request.args
     id=args.get('id')
     output=[]
